@@ -8,7 +8,7 @@ Cada tutorial está en su propia carpeta dentro de `/tutorials`, con su código 
 
 ## 📌 Índice de tutoriales
 
-1. **[Lector de publicaciones en Hive](./tutorials/01-hive-post-reader/README.md)**  
+1. **[Lector de publicaciones en Hive](./src/tutorials/01-hive-post-reader/README.md)**  
    Aprende a obtener y mostrar publicaciones desde Hive usando `dhive` o la API pública. Ideal para tu primera app React conectada a blockchain.
 
 2. _(Próximamente)_ Autenticación con Hive Keychain.
