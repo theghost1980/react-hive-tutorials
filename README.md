@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 📚 React + TypeScript + Hive Tutorials
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a esta colección de tutoriales prácticos donde aprenderás a integrar la blockchain de Hive con aplicaciones modernas usando **React** y **TypeScript**.
 
-Currently, two official plugins are available:
+Cada tutorial está en su propia carpeta dentro de `/tutorials`, con su código fuente y una guía paso a paso en el archivo `README.md`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Índice de tutoriales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **[Lector de publicaciones en Hive](./tutorials/01-hive-post-reader/README.md)**  
+   Aprende a obtener y mostrar publicaciones desde Hive usando `dhive` o la API pública. Ideal para tu primera app React conectada a blockchain.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+2. _(Próximamente)_ Autenticación con Hive Keychain.
+
+3. _(Próximamente)_ Crear un post desde React.
+
+---
+
+## 🚀 Cómo iniciar
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/react-hive-tutorials.git
+cd react-hive-tutorials
+
+# Instalar dependencias
+npm install
+
+# Ejecutar algún tutorial
+cd tutorials/01-hive-post-reader
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🙌 Contribuciones
+Si tienes ideas o sugerencias para más tutoriales, ¡bienvenido a abrir un issue o PR!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🐝 Sobre Hive
+Hive.io es una blockchain rápida, escalable y libre de comisiones, ideal para construir aplicaciones sociales y Web3.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
