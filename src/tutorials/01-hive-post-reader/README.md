@@ -17,12 +17,14 @@ En este tutorial construiremos una pequeña app con **React + TypeScript** que o
 
 ## 📦 Estructura de carpetas
 
+```
 tutorials/01-hive-post-reader/
 ├── src/
 │ ├── App.tsx
 │ └── main.tsx
 ├── README.md
 └── package.json
+```
 
 ## 🔧 Próximos pasos
 
