@@ -1,0 +1,120 @@
+/* src/components/RealtimeBlockFeed.css */
+
+.realtime-block-feed-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center; /* Sigue centrando el título principal */
+    max-width: 900px; /* Aumentamos el ancho máximo para las dos columnas */
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .realtime-block-feed-container h3 {
+    color: #007bff;
+    margin-bottom: 20px; /* Más espacio debajo del título principal */
+  }
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para el contenedor del layout de dos columnas */
+  .feed-layout-container {
+      display: flex; /* Habilitar Flexbox */
+      gap: 30px; /* Espacio entre las columnas */
+      flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+      justify-content: center; /* Centra los elementos si no ocupan todo el ancho */
+      align-items: flex-start; /* Alinea los items al inicio (arriba) */
+  }
+  
+  /* Estilos para la sección de explicación (ahora es un ítem flex) */
+  .block-feed-explanation {
+      margin-bottom: 25px; /* Mantenemos margen inferior por si se apilan */
+      padding: 15px;
+      background-color: #e9f5ff;
+      border-left: 4px solid #007bff;
+      border-radius: 4px;
+      text-align: left; /* Alinear texto de la explicación a la izquierda */
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #333;
+      flex: 1; /* Permite que ocupe espacio flexible */
+      min-width: 300px; /* Ancho mínimo para evitar que se colapse demasiado */
+      max-width: 400px; /* Establecemos un ancho máximo preferido para la explicación */
+      /* Eliminamos el margin: 20px auto; que centraba antes, Flexbox lo maneja */
+      margin: 0; /* Resetear margen */
+  }
+  
+  .block-feed-explanation h4 {
+      color: #0056b3;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #cfe2ff;
+      padding-bottom: 5px;
+  }
+  
+  .block-feed-explanation p {
+       margin: 10px 0;
+  }
+  
+  
+  /* Estilos para el contenedor del feed (botón + lista) - Ítem flex */
+.feed-content {
+    flex: 2;
+    min-width: 300px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustes para elementos dentro de .feed-content */
+.feed-content .control-button {
+    margin-bottom: 20px;
+}
+
+.feed-content .blocks-list {
+    /* ... otros estilos existentes como width y text-align ... */
+    width: 100%; /* Asegura que la lista ocupe todo el ancho disponible */
+    text-align: left;
+
+    /* >>> COMENTARIO IMPORTANTE: Limitar la altura y añadir scroll vertical */
+    max-height: 1000px; /* Define la altura máxima. Ajusta este valor según necesites. */
+    overflow-y: auto; /* Añade una barra de scroll vertical automáticamente si el contenido excede el max-height */
+    /* overflow-x: hidden; */ /* Opcional: oculta la barra de scroll horizontal si no es necesaria */
+    padding-right: 15px; /* Opcional: Añadir un pequeño padding para evitar que el contenido se pegue a la barra de scroll */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho/alto total */
+}
+
+.feed-content .blocks-list h4 {
+     /* ... estilos existentes ... */
+     text-align: center;
+}
+  
+  .feed-content .block-item {
+       /* ... existing styles ... */
+  }
+  
+  
+  /* ... rest of the styles ... */
+  
+  /* Estilos para el enlace del número de bloque */
+  .realtime-block-feed-container .block-item .block-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 5px;
+  }
+  
+  .realtime-block-feed-container .block-item .block-link:hover {
+      text-decoration: underline;
+      color: #0056b3;
+  }
+  
+  
+  .realtime-block-feed-container .block-separator {
+      border: 0;
+      height: 1px;
+      background: #eee;
+      margin: 15px 0;
+  }

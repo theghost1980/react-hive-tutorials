@@ -1,0 +1,106 @@
+/* src/components/GlobalPropsExplanation.css */
+
+/* Estilos para el contenedor principal del componente de explicación */
+.explanation-container {
+    margin-top: 20px; /* Espacio arriba */
+    padding: 15px;
+    background-color: #e9e9e9; /* Fondo ligeramente gris para destacarlo */
+    border-radius: 8px;
+    text-align: left; /* Alinear texto a la izquierda dentro del cuadro */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar el bloque y darle margen automático a los lados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilos para el título dentro del contenedor */
+  .explanation-container h3 {
+    margin-top: 0; /* Elimina el margen superior por defecto del h3 */
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  /* Estilos para las listas (ul) dentro del contenedor */
+  .explanation-container ul {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 20px; /* Espacio a la izquierda para las viñetas */
+  }
+  
+  /* Estilos para los elementos de la lista (li) */
+  .explanation-container li {
+      margin-bottom: 8px; /* Espacio entre elementos de la lista */
+      line-height: 1.5; /* Altura de línea para mejor lectura */
+  }
+  
+  /* Estilos para los elementos code (para nombres de propiedades como head_block_number) */
+  .explanation-container code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      font-size: 0.9em;
+  }
+
+  /* Estilos para el contenedor principal del componente de explicación */
+.explanation-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .explanation-container h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  /* Estilos para las listas (ul) dentro del contenedor */
+  .explanation-container ul {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+  }
+  
+  .explanation-container li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+  }
+  
+  .explanation-container code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      font-size: 0.9em;
+  }
+  
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para el título de la nueva sección sobre Keychain */
+  .explanation-container h4 {
+      margin-top: 25px; /* Más espacio arriba para separarlo de la sección anterior */
+      margin-bottom: 10px;
+      color: #0056b3; /* Color similar a otros subtítulos */
+      border-bottom: 1px solid #ccc; /* Separador */
+      padding-bottom: 5px;
+  }
+  
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para los enlaces */
+  .explanation-container a.github-link {
+      color: #007bff; /* Color azul */
+      text-decoration: none; /* Sin subrayado por defecto */
+      font-weight: normal; /* Fuente normal */
+  }
+  
+  .explanation-container a.github-link:hover {
+      text-decoration: underline; /* Subrayado al pasar el ratón */
+      color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }
+  
+  .explanation-container em {
+      font-size: 0.9em;
+      color: #555;
+  }

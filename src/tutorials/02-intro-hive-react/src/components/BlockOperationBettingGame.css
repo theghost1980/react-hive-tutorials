@@ -1,0 +1,221 @@
+/* src/components/BlockOperationBettingGame.css */
+
+.betting-game-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center; /* Centra el título principal */
+    max-width: 900px; /* Aumentamos el ancho máximo para el layout de 2 columnas */
+    margin: 30px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .betting-game-container h3 {
+    color: #007bff;
+    margin-bottom: 20px; /* Espacio debajo del título principal */
+  }
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para el contenedor del layout de dos columnas */
+  .game-layout-container {
+      display: flex; /* Habilitar Flexbox */
+      gap: 30px; /* Espacio entre las columnas */
+      flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+      align-items: flex-start; /* Alinea los items al inicio (arriba) */
+      justify-content: center; /* Centra si no ocupa todo el ancho */
+  }
+  
+  
+  /* Estilos para la sección de explicación (Columna Izquierda) */
+  .game-explanation {
+      margin-bottom: 20px; /* Margen inferior para cuando se apilan */
+      padding: 15px;
+      background-color: #ffe9d9;
+      border-left: 4px solid #ff9800;
+      border-radius: 4px;
+      text-align: left;
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #333;
+      flex-basis: 350px; /* Ancho base preferido */
+      flex-grow: 0; /* No crecer más allá del contenido si hay espacio */
+      flex-shrink: 0; /* No encogerse por debajo del ancho base si hay poco espacio */
+       /* margin: 0; */ /* Resetear margen si aplica */
+  }
+  
+  .game-explanation h4 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #555;
+  }
+  
+  .game-explanation p {
+      margin: 10px 0;
+  }
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para el contenedor principal de la columna derecha */
+  .game-main-content {
+      flex: 1; /* Ocupa el espacio restante */
+      min-width: 300px; /* Ancho mínimo */
+      /* margin: 0; */ /* Resetear margen */
+      display: flex; /* Usamos flexbox interno para apilar controles, resultado y lista */
+      flex-direction: column; /* Apilarlos verticalmente */
+      align-items: center; /* Centrar elementos horizontalmente dentro de esta columna */
+  }
+  
+  /* Estilos para los controles del juego (dentro de game-main-content) */
+  .game-controls {
+      margin-top: 0; /* Ajustar margen */
+      padding-top: 0; /* Ajustar padding */
+      border-top: none; /* Eliminar borde superior si estaba */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%; /* Ocupar todo el ancho disponible en la columna */
+  }
+  
+  .game-controls p {
+      margin: 0;
+      font-size: 1.1em;
+      text-align: center; /* Asegurar que el texto esté centrado si la columna lo permite */
+  }
+  
+  .operation-selection {
+       display: flex; /* Usar flexbox para alinear label y select */
+       align-items: center;
+       gap: 10px; /* Espacio entre label y select */
+       flex-wrap: wrap; /* Permitir que se apilen si el ancho es limitado */
+       justify-content: center; /* Centrar label/select si se apilan */
+       width: 100%; /* Ocupar todo el ancho disponible */
+  }
+  
+  .operation-selection label {
+      margin-right: 0; /* Ajustar margen */
+      font-weight: bold;
+      color: #555;
+  }
+  
+  .operation-selection select {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      cursor: pointer;
+      min-width: 150px; /* Ancho mínimo para el select */
+  }
+  
+  .operation-selection select:disabled {
+      background-color: #eee;
+      cursor: not-allowed;
+  }
+  
+  /* Estilos para los botones (Apostar, Jugar de Nuevo) */
+  .betting-game-container button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+       /* Aseguramos que el botón no se estire a todo el ancho */
+      align-self: center;
+  }
+  
+  .betting-game-container button.bet-button {
+       background-color: #28a745;
+       color: white;
+  }
+  .betting-game-container button.bet-button:hover:not(:disabled) {
+       background-color: #218838;
+  }
+  
+  .betting-game-container button.play-again-button {
+       background-color: #007bff;
+       color: white;
+  }
+  .betting-game-container button.play-again-button:hover:not(:disabled) {
+       background-color: #0056b3;
+  }
+  
+  .betting-game-container button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+      color: #666;
+  }
+  
+  
+  /* Estilos para el resultado del juego */
+  .game-result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      font-size: 1.1em;
+      font-weight: bold;
+      width: 100%; /* Ocupar todo el ancho de la columna */
+      box-sizing: border-box; /* Incluir padding en el ancho */
+      text-align: center; /* Asegurar que el texto del resultado esté centrado */
+  }
+  
+  .game-result p {
+       margin: 5px 0; /* Espacio entre las líneas de resultado/conteo */
+  }
+  
+  .game-result.win {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+  }
+  
+  .game-result.lose {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+  }
+  
+  .betting-game-container .error-message {
+      color: #dc3545;
+      font-weight: bold;
+      margin-top: 15px;
+  }
+  
+  
+  /* >>> COMENTARIO IMPORTANTE: Estilos para la lista de operaciones del bloque */
+  .block-operations-list {
+      margin-top: 20px; /* Espacio arriba */
+      padding: 15px;
+      background-color: #f9f9f9; /* Fondo claro */
+      border: 1px solid #eee;
+      border-radius: 4px;
+      text-align: left; /* Alinear el texto de la lista a la izquierda */
+      width: 100%; /* Ocupar todo el ancho de la columna */
+      box-sizing: border-box; /* Incluir padding en el ancho */
+  
+      /* Opcional: Limitar altura y añadir scroll si la lista es muy larga */
+      max-height: 400px; /* Altura máxima */
+      overflow-y: auto; /* Scroll vertical */
+      padding-right: 10px; /* Espacio para el scrollbar */
+  }
+  
+  .block-operations-list h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #555;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      text-align: center; /* Centrar título de la lista */
+  }
+  
+  .block-operations-list ul {
+      list-style: disc; /* Viñetas */
+      padding-left: 20px; /* Sangría para las viñetas */
+      margin: 0; /* Eliminar margen por defecto */
+  }
+  
+  .block-operations-list li {
+      margin-bottom: 8px; /* Espacio entre elementos */
+      word-break: break-all; /* Romper palabras largas para evitar desbordamiento */
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada para el código */
+      font-size: 0.9em;
+  }
