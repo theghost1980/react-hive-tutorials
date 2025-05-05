@@ -20,6 +20,13 @@ export interface Tutorial {
       description: "Configuración y usos de Dhive en react",
       path: "/tutorials/02-intro-hive-react/",
       readmeRelativePath: "./02-intro-hive-react/README.md",
+    },
+    {
+      id: "03",
+      title: "Auth Full stack con react, express y Hive Keychain",
+      description: "Puesta en marcha de un fullstack para autenticacion en HIVE blockchain",
+      path: "/tutorials/03-keychain-auth-FULLSTACK/",
+      readmeRelativePath: "./03-keychain-auth-FULLSTACK/README.md",
     }
   ];
   
