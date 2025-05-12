@@ -13,9 +13,11 @@ Cada tutorial está en su propia carpeta dentro de `/tutorials`, con su código 
 
 2. **[Introducción: React y Hive, Primeros Pasos](./src/tutorials/02-intro-hive-react/README.md)**
    Configuración y usos de Dhive
-2. _(Próximamente)_ Autenticación con Hive Keychain.
 
-3. _(Próximamente)_ Crear un post desde React.
+3. **[Autenticación con Hive Keychain](./src/tutorials/03-keychain-auth-FULLSTACK/client/README.md)**  
+   Aprende a integrar la autenticación de Hive Keychain en tu aplicación React.
+
+4. _(Próximamente)_ Crear un post desde React.
 
 ---
 
@@ -40,4 +42,3 @@ Si tienes ideas o sugerencias para más tutoriales, ¡bienvenido a abrir un issu
 
 🐝 Sobre Hive
 Hive.io es una blockchain rápida, escalable y libre de comisiones, ideal para construir aplicaciones sociales y Web3.
-
